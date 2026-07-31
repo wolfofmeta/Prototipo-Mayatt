@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><rect width="300" height="300" fill="#5A6B4A"/><text x="150" y="165" font-family="sans-serif" font-size="90" fill="#F5F1E6" text-anchor="middle">M</text></svg>
+</template>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+  body{margin:0}
+  * { -webkit-tap-highlight-color: transparent; }
+  ::-webkit-scrollbar{display:none}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+<div style="display:flex;justify-content:center;padding:40px;background:#EDE9DD;min-height:874px;box-sizing:border-box;font-family:'Inter',sans-serif">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="height:100%;width:100%;display:flex;flex-direction:column;background:#F5F1E6;position:relative;overflow:hidden">
+
+  <div style="flex:1;min-height:0;overflow-y:auto;position:relative">
+
+    <!-- ============ HOME ============ -->
+    <sc-if value="{{isHome}}" hint-placeholder-val="{{true}}">
+    <div>
+      <div style="position:relative;padding:58px 20px 22px;display:flex;align-items:center;justify-content:space-between;overflow:hidden">
+        <img src="./assets/rooftop-photo.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+        <div style="position:absolute;inset:0;background:rgba(139,150,120,0.88)"></div>
+        <img src="./assets/mayatt-logo-bold.png" alt="Mayatt" style="position:relative;height:52px;object-fit:contain"/>
+        <div onClick="{{goProfile}}" style="position:relative;display:flex;align-items:center;gap:9px;cursor:pointer">
+          <div style="text-align:right">
+            <div style="font-size:10.5px;color:#E7E9DC">Bienvenido</div>
+            <div style="font-size:13px;color:#F8F6EF;font-weight:600">Camila Torres</div>
+            <div onClick="{{openWallet}}" style="margin-top:5px;display:inline-flex;align-items:center;gap:5px;background:rgba(245,241,230,0.25);border-radius:20px;padding:4px 10px;cursor:pointer">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="3" stroke="#F8F6EF" stroke-width="1.8"/><path d="M3 9h18" stroke="#F8F6EF" stroke-width="1.8"/><circle cx="17" cy="14" r="1.3" fill="#F8F6EF"/></svg>
+              <div style="font-size:11px;color:#F8F6EF;font-weight:600">$120.00</div>
+            </div>
+          </div>
+          <div style="width:40px;height:40px;border-radius:50%;flex-shrink:0;overflow:hidden">
+            <image-slot id="home-avatar" shape="circle" placeholder="foto" style="width:100%;height:100%"></image-slot>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin:14px 20px 0;position:relative;border-radius:22px;overflow:hidden;height:150px">
+        <img src="./assets/hotel-exterior.jpeg?v=2" alt="Eco-Lodge" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+      </div>
+
+      <div style="padding:12px 20px 6px;display:flex;flex-direction:column;gap:10px">
+        <div onClick="{{openBooking}}" style="position:relative;border-radius:20px;overflow:hidden;height:96px;cursor:pointer">
+          <img src="./assets/room-photo.jpeg" alt="Reservar Habitación" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(90,107,74,0.85) 0%,rgba(139,150,120,0.35) 65%,rgba(139,150,120,0.1) 100%)"></div>
+          <div style="position:relative;height:100%;padding:0 14px;display:flex;align-items:center;gap:12px">
+            <div style="flex:1;font-family:'Poppins',sans-serif;font-size:18px;font-weight:500;color:#F8F6EF;line-height:1.25">Reservar<br>Habitación</div>
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(245,241,230,0.9);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#2B2B24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+        <div onClick="{{go_explorar}}" style="position:relative;border-radius:20px;overflow:hidden;height:96px;cursor:pointer">
+          <img src="./assets/experience-photo.jpeg" alt="Explorar Experiencias" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(90,107,74,0.85) 0%,rgba(139,150,120,0.35) 65%,rgba(139,150,120,0.1) 100%)"></div>
+          <div style="position:relative;height:100%;padding:0 14px;display:flex;align-items:center;gap:12px">
+            <div style="flex:1;font-family:'Poppins',sans-serif;font-size:18px;font-weight:500;color:#F8F6EF;line-height:1.25">Explorar<br>Experiencias</div>
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(245,241,230,0.9);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#2B2B24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+        <div onClick="{{openPasadia}}" style="position:relative;border-radius:20px;overflow:hidden;height:96px;cursor:pointer">
+          <img src="./assets/piscina-photo.jpeg" alt="Pasadía" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(90,107,74,0.85) 0%,rgba(139,150,120,0.35) 65%,rgba(139,150,120,0.1) 100%)"></div>
+          <div style="position:relative;height:100%;padding:0 14px;display:flex;align-items:center;gap:12px">
+            <div style="flex:1;font-family:'Poppins',sans-serif;font-size:18px;font-weight:500;color:#F8F6EF;line-height:1.25">Pasadía</div>
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(245,241,230,0.9);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#2B2B24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding:4px 20px 4px;display:flex;align-items:center;justify-content:space-between">
+        <div style="font-family:'Poppins',sans-serif;font-size:19px;font-weight:600;color:#2B2B24">Experiencias Mayatt</div>
+        <div onClick="{{go_explorar}}" style="cursor:pointer;color:#6F8258"><svg width="9" height="15" viewBox="0 0 8 14"><path d="M1 1l6 6-6 6" stroke="#6F8258" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </div>
+      <div style="display:flex;gap:10px;overflow-x:auto;padding:2px 20px 4px">
+        <sc-for list="{{experiences}}" as="exp" hint-placeholder-count="3">
+          <div onClick="{{exp.open}}" style="flex:0 0 51%;cursor:pointer">
+            <image-slot id="{{exp.imgId}}" shape="rounded" radius="14" placeholder="{{exp.placeholder}}" src="{{exp.imgSrc}}" style="width:100%;height:100px"></image-slot>
+            <div style="font-size:12.5px;color:#2B2B24;font-weight:500;margin-top:8px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{exp.name}}</div>
+            <div style="font-size:11px;color:#6b6b60;margin-top:2px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{exp.tagline}}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="margin:22px 20px 0;background:#DCE1CC;border-radius:22px;padding:18px" onClick="{{openMap}}">
+        <div style="display:flex;align-items:center;justify-content:between;justify-content:space-between;margin-bottom:12px">
+          <div style="font-family:'Poppins',sans-serif;font-size:18px;font-weight:600;color:#2B2B24">Mapa del Hotel</div>
+          <svg width="9" height="15" viewBox="0 0 8 14"><path d="M1 1l6 6-6 6" stroke="#5A6B4A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div style="border-radius:16px;overflow:hidden;cursor:pointer">
+          <img src="./assets/hotel-map.jpeg" alt="Mapa del Hotel" style="width:100%;height:150px;object-fit:cover;display:block"/>
+        </div>
+      </div>
+
+      <div style="margin:18px 20px 24px;background:#EDE6D6;border-radius:22px;padding:18px;cursor:pointer" onClick="{{openImpact}}">
+        <sc-if value="{{showImpactOnHome}}" hint-placeholder-val="{{true}}">
+        <div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <div style="font-family:'Poppins',sans-serif;font-size:18px;font-weight:600;color:#2B2B24">Eventos y Próximos Destinos</div>
+            <svg width="9" height="15" viewBox="0 0 8 14"><path d="M1 1l6 6-6 6" stroke="#5A6B4A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div style="border-radius:16px;overflow:hidden">
+            <img src="./assets/destino-cartagena.jpeg" alt="Cartagena" style="width:100%;height:150px;object-fit:cover;display:block"/>
+          </div>
+        </div>
+        </sc-if>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ EXPLORAR TAB ============ -->
+    <sc-if value="{{isExplorar}}" hint-placeholder-val="{{false}}">
+    <div>
+      <div style="position:relative;padding:58px 20px 22px;display:flex;align-items:center;justify-content:space-between;overflow:hidden">
+        <img src="./assets/rooftop-photo.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+        <div style="position:absolute;inset:0;background:rgba(139,150,120,0.88)"></div>
+        <img src="./assets/mayatt-logo-bold.png" alt="Mayatt" style="position:relative;height:52px;object-fit:contain"/>
+        <div onClick="{{goProfile}}" style="position:relative;display:flex;align-items:center;gap:9px;cursor:pointer">
+          <div style="text-align:right">
+            <div style="font-size:10.5px;color:#E7E9DC">Bienvenido</div>
+            <div style="font-size:13px;color:#F8F6EF;font-weight:600">Camila Torres</div>
+          </div>
+          <div style="width:40px;height:40px;border-radius:50%;flex-shrink:0;overflow:hidden">
+            <image-slot id="home-avatar" shape="circle" placeholder="foto" style="width:100%;height:100%"></image-slot>
+          </div>
+        </div>
+      </div>
+      <div style="padding:16px 20px 4px">
+        <div style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:600;color:#2B2B24">Experiencias</div>
+        <div style="font-size:13px;color:#6b6b60;margin-top:2px">Todas las experiencias sostenibles</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;padding:4px 20px 28px">
+        <sc-for list="{{experiences}}" as="exp" hint-placeholder-count="5">
+          <div onClick="{{exp.open}}" style="position:relative;background:#FBF9F2;border-radius:18px;overflow:hidden;display:flex;gap:12px;padding:10px;cursor:pointer;align-items:center">
+            <img src="{{exp.imgSrc}}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.14;pointer-events:none"/>
+            <image-slot id="{{exp.imgId}}" shape="rounded" radius="12" placeholder="{{exp.placeholder}}" src="{{exp.imgSrc}}" style="position:relative;width:84px;height:84px;flex-shrink:0"></image-slot>
+            <div style="position:relative;flex:1;min-width:0">
+              <div style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:#2B2B24">{{exp.name}}</div>
+              <div style="font-size:12px;color:#6b6b60;margin-top:3px">{{exp.duration}} · {{exp.price}}</div>
+            </div>
+            <div onClick="{{exp.reserve}}" style="position:relative;background:#6F8258;color:#F8F6EF;font-size:11.5px;font-weight:600;padding:7px 12px;border-radius:12px;cursor:pointer;flex-shrink:0;white-space:nowrap">Reservar</div>
+            <div onClick="{{exp.toggleFav}}" style="position:relative;width:32px;height:32px;flex-shrink:0;display:flex;align-items:center;justify-content:center">{{exp.heartIcon}}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ FAVORITOS TAB ============ -->
+    <sc-if value="{{isFavoritos}}" hint-placeholder-val="{{false}}">
+    <div>
+      <div style="padding:58px 20px 16px">
+        <div style="font-family:'Poppins',sans-serif;font-size:26px;font-weight:600;color:#2B2B24">Favoritos</div>
+      </div>
+      <sc-if value="{{hasFavorites}}" hint-placeholder-val="{{false}}">
+      <div style="display:flex;flex-direction:column;gap:14px;padding:4px 20px 28px">
+        <sc-for list="{{favoriteExperiences}}" as="exp" hint-placeholder-count="0">
+          <div onClick="{{exp.open}}" style="background:#FBF9F2;border-radius:18px;overflow:hidden;display:flex;gap:12px;padding:10px;cursor:pointer;align-items:center">
+            <image-slot id="{{exp.imgId}}" shape="rounded" radius="12" placeholder="{{exp.placeholder}}" src="{{exp.imgSrc}}" style="width:84px;height:84px;flex-shrink:0"></image-slot>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:#2B2B24">{{exp.name}}</div>
+              <div style="font-size:12px;color:#6b6b60;margin-top:3px">{{exp.duration}} · {{exp.price}}</div>
+            </div>
+            <div onClick="{{exp.toggleFav}}" style="width:32px;height:32px;flex-shrink:0;display:flex;align-items:center;justify-content:center">{{exp.heartIcon}}</div>
+          </div>
+        </sc-for>
+      </div>
+      </sc-if>
+      <sc-if value="{{noFavorites}}" hint-placeholder-val="{{true}}">
+      <div style="padding:60px 30px;text-align:center">
+        <div style="font-size:40px;margin-bottom:10px">🌿</div>
+        <div style="font-size:14px;color:#6b6b60;line-height:1.5">Aún no tienes experiencias guardadas.<br/>Toca el corazón para guardarlas aquí.</div>
+      </div>
+      </sc-if>
+    </div>
+    </sc-if>
+
+    <!-- ============ WALLET TAB ============ -->
+    <sc-if value="{{isWallet}}" hint-placeholder-val="{{false}}">
+    <div style="position:relative;min-height:100%;overflow:hidden">
+      <img src="./assets/wallet-watermark.jpeg" alt="" style="position:absolute;top:130px;left:0;width:100%;height:auto;opacity:0.08;pointer-events:none"/>
+      <div style="position:relative;padding:58px 20px 22px;display:flex;align-items:center;justify-content:space-between;overflow:hidden">
+        <img src="./assets/rooftop-photo.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+        <div style="position:absolute;inset:0;background:rgba(139,150,120,0.88)"></div>
+        <img src="./assets/mayatt-logo-bold.png" alt="Mayatt" style="position:relative;height:52px;object-fit:contain"/>
+        <div onClick="{{goProfile}}" style="position:relative;display:flex;align-items:center;gap:9px;cursor:pointer">
+          <div style="text-align:right">
+            <div style="font-size:10.5px;color:#E7E9DC">Bienvenido</div>
+            <div style="font-size:13px;color:#F8F6EF;font-weight:600">Camila Torres</div>
+          </div>
+          <div style="width:40px;height:40px;border-radius:50%;flex-shrink:0;overflow:hidden">
+            <image-slot id="home-avatar" shape="circle" placeholder="foto" style="width:100%;height:100%"></image-slot>
+          </div>
+        </div>
+      </div>
+      <div style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:600;color:#2B2B24;margin:16px 20px 12px">Wallet</div>
+      <div style="position:relative;margin:0 20px 18px;background:#8B9678;border-radius:22px;padding:20px;overflow:hidden">
+        <img src="./assets/cabins-pool-bg-v2.jpeg" alt="Eco-Lodge" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+        <div style="position:relative">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+            <div>
+              <div style="font-size:12px;color:#E7E9DC;letter-spacing:0.5px">Saldo disponible</div>
+              <div style="font-family:'Poppins',sans-serif;font-size:32px;font-weight:600;color:#F8F6EF;margin-top:6px">$120.00</div>
+            </div>
+            <div style="background:rgba(245,241,230,0.25);color:#F8F6EF;text-align:center;padding:8px 12px;border-radius:14px;font-weight:600;font-size:11.5px;cursor:pointer;white-space:nowrap;margin-top:2px">Transferir noche</div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:16px;align-items:stretch">
+            <div style="flex:1;background:rgba(245,241,230,0.9);color:#2B2B24;text-align:center;padding:11px 4px;border-radius:14px;font-weight:600;font-size:12.5px;cursor:pointer;display:flex;align-items:center;justify-content:center">Agregar fondos</div>
+            <div style="flex:1;background:rgba(245,241,230,0.9);color:#2B2B24;text-align:center;padding:11px 4px;border-radius:14px;font-weight:600;font-size:12.5px;cursor:pointer;display:flex;align-items:center;justify-content:center">Pagar</div>
+            <div style="flex:1;background:rgba(245,241,230,0.9);color:#2B2B24;text-align:center;padding:11px 4px;border-radius:14px;font-weight:600;font-size:12.5px;cursor:pointer;display:flex;align-items:center;justify-content:center">Retirar</div>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;margin:0 20px 12px;background:#EDE6D6;border-radius:18px;padding:14px 16px;display:flex;align-items:center;gap:12px">
+        <img src="./assets/hotel-exterior.jpeg?v=2" alt="Mayatt" style="width:38px;height:38px;border-radius:12px;object-fit:cover;flex-shrink:0"/>
+        <div style="flex:1">
+          <div style="font-size:13.5px;color:#2B2B24;font-weight:600">20% OFF en tu próxima experiencia</div>
+          <div style="font-size:11.5px;color:#6b6b60;margin-top:2px">Usa el cupón MAYATT20 · válido hasta fin de mes</div>
+        </div>
+      </div>
+      <div style="position:relative;margin:0 20px 18px;background:#EDE6D6;border-radius:18px;padding:14px 16px;display:flex;align-items:center;gap:12px">
+        <img src="./assets/airport-transfer.jpeg" alt="Traslado" style="width:38px;height:38px;border-radius:12px;object-fit:cover;flex-shrink:0"/>
+        <div style="flex:1">
+          <div style="font-size:13.5px;color:#2B2B24;font-weight:600">20% OFF en traslados al aeropuerto</div>
+          <div style="font-size:11.5px;color:#6b6b60;margin-top:2px">Usa el cupón MAYATTAIR · válido hasta fin de mes</div>
+        </div>
+      </div>
+      <div style="position:relative;margin:0 20px 18px;background:#EDE6D6;border-radius:18px;padding:14px 16px;display:flex;align-items:center;gap:12px">
+        <img src="./assets/catamaran-tour.jpeg" alt="Catamarán" style="width:38px;height:38px;border-radius:12px;object-fit:cover;flex-shrink:0"/>
+        <div style="flex:1">
+          <div style="font-size:13.5px;color:#2B2B24;font-weight:600">20% OFF en paseo en catamarán</div>
+          <div style="font-size:11.5px;color:#6b6b60;margin-top:2px">Usa el cupón MAYATTSEA · válido hasta fin de mes</div>
+        </div>
+      </div>
+      <div style="position:relative;margin:0 20px 8px;font-size:13px;color:#6b6b60;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Movimientos recientes</div>
+      <div style="position:relative;margin:0 20px 28px;background:rgba(111,130,88,0.1);border-radius:18px;overflow:hidden">
+        <sc-for list="{{walletMovements}}" as="mv" hint-placeholder-count="3">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:0.5px solid rgba(0,0,0,0.06)">
+            <div>
+              <div style="font-size:14px;color:#2B2B24;font-weight:500">{{mv.label}}</div>
+              <div style="font-size:11.5px;color:#6b6b60;margin-top:2px">{{mv.date}}</div>
+            </div>
+            <div style="font-size:14px;font-weight:600;color:{{mv.color}}">{{mv.amount}}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ PERFIL TAB ============ -->
+    <sc-if value="{{isPerfil}}" hint-placeholder-val="{{false}}">
+    <div style="position:relative">
+      <div style="position:relative;padding:58px 20px 22px;display:flex;align-items:center;justify-content:space-between;overflow:hidden">
+        <img src="./assets/rooftop-photo.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+        <div style="position:absolute;inset:0;background:rgba(139,150,120,0.88)"></div>
+        <img src="./assets/mayatt-logo-bold.png" alt="Mayatt" style="position:relative;height:52px;object-fit:contain"/>
+        <div style="position:relative;text-align:right">
+          <div style="font-size:10.5px;color:#E7E9DC">Bienvenido</div>
+          <div style="font-size:13px;color:#F8F6EF;font-weight:600">Camila Torres</div>
+        </div>
+      </div>
+      <div style="position:relative;padding:24px 20px 20px;display:flex;flex-direction:column;align-items:center;gap:10px;overflow:hidden">
+        <img src="./assets/rooftop-photo.jpeg" alt="" style="position:absolute;top:-40px;left:0;width:100%;height:220px;object-fit:cover;opacity:0.6"/>
+        <image-slot id="profile-avatar" shape="circle" placeholder="foto" style="position:relative;width:84px;height:84px"></image-slot>
+        <div style="position:relative;font-family:'Poppins',sans-serif;font-size:18px;font-weight:600;color:#2B2B24">Camila Torres</div>
+        <div style="position:relative;font-size:13px;color:#3B3D1F;font-weight:500">camila.torres@correo.com</div>
+      </div>
+
+      <div style="margin:0 20px 18px">
+        <div style="font-size:13px;color:#6b6b60;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;padding:0 4px">Noches Disponibles</div>
+        <div style="background:#DCE1CC;border-radius:18px;padding:16px;position:relative;overflow:hidden">
+          <img src="./assets/cabins-pool-night.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(220,225,204,0.25) 0%,rgba(220,225,204,0.55) 100%)"></div>
+          <div style="position:relative;display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+            <div style="font-family:'Poppins',sans-serif;font-size:20px;font-weight:600;color:#F8F6EF;text-transform:uppercase">{{nightsRemaining}} noches</div>
+            <div style="font-size:12px;color:#F8F6EF">de 15 al año</div>
+          </div>
+          <div style="position:relative;height:8px;border-radius:4px;background:#F5F1E6;overflow:hidden">
+            <div style="height:100%;border-radius:4px;background:#6F8258;width:{{nightsUsedPct}}%"></div>
+          </div>
+          <div onClick="{{openTransfer}}" style="position:relative;margin-top:12px;text-align:center;background:#F5F1E6;color:#3f4d33;font-size:12.5px;font-weight:600;padding:10px;border-radius:12px;cursor:pointer">Transferir una noche a otro usuario</div>
+        </div>
+      </div>
+
+      <div style="margin:0 20px 18px">
+        <div style="font-size:13px;color:#6b6b60;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;padding:0 4px">Pasadías Disponibles</div>
+        <div style="background:#DCE1CC;border-radius:18px;padding:16px;position:relative;overflow:hidden">
+          <img src="./assets/resort-daytime-beach.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+          <div style="position:relative;display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+            <div style="font-family:'Poppins',sans-serif;font-size:20px;font-weight:600;color:#2B2B24;text-transform:uppercase">{{pasadiasRemaining}} pasadías</div>
+            <div style="font-size:12px;color:#F8F6EF">de 45 al año</div>
+          </div>
+          <div style="position:relative;height:8px;border-radius:4px;background:#F5F1E6;overflow:hidden">
+            <div style="height:100%;border-radius:4px;background:#6F8258;width:{{pasadiasUsedPct}}%"></div>
+          </div>
+          <div onClick="{{openTransferPasadia}}" style="position:relative;margin-top:12px;text-align:center;background:#F5F1E6;color:#3f4d33;font-size:12.5px;font-weight:600;padding:10px;border-radius:12px;cursor:pointer">Transferir pasadía a otro usuario</div>
+        </div>
+      </div>
+
+      <sc-if value="{{hasBooking}}" hint-placeholder-val="{{false}}">
+      <div style="margin:0 20px 18px">
+        <div style="font-size:13px;color:#6b6b60;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;padding:0 4px">Mi Reserva</div>
+        <div style="background:#DCE1CC;border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:#2B2B24">{{bookedRoomName}}</div>
+            <div style="font-size:12px;color:#5A6B4A;margin-top:3px">{{bookingSummaryLine}}</div>
+          </div>
+          <div style="font-size:11px;background:#6F8258;color:#F5F1E6;padding:5px 10px;border-radius:20px;font-weight:600">Confirmada</div>
+        </div>
+      </div>
+      </sc-if>
+
+      <div style="margin:0 20px 18px">
+        <div style="font-size:13px;color:#6b6b60;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;padding:0 4px">Cuenta</div>
+        <div style="background:#FBF9F2;border-radius:18px;overflow:hidden">
+          <sc-for list="{{profileRowsAccount}}" as="row" hint-placeholder-count="3">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:0.5px solid rgba(0,0,0,0.06)">
+              <div style="font-size:15px;color:#2B2B24">{{row.label}}</div>
+              <svg width="7" height="12" viewBox="0 0 8 14"><path d="M1 1l6 6-6 6" stroke="rgba(0,0,0,0.25)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="margin:0 20px 30px">
+        <div style="font-size:13px;color:#6b6b60;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;padding:0 4px">Soporte</div>
+        <div style="background:#FBF9F2;border-radius:18px;overflow:hidden">
+          <sc-for list="{{profileRowsSupport}}" as="row" hint-placeholder-count="2">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:0.5px solid rgba(0,0,0,0.06)">
+              <div style="font-size:15px;color:#2B2B24">{{row.label}}</div>
+              <svg width="7" height="12" viewBox="0 0 8 14"><path d="M1 1l6 6-6 6" stroke="rgba(0,0,0,0.25)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </sc-for>
+        </div>
+        <div style="text-align:center;padding:14px;color:#B5453B;font-size:14px;font-weight:600;margin-top:6px">Cerrar sesión</div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ OVERLAY: PASADÍA ============ -->
+    <sc-if value="{{isPasadia}}" hint-placeholder-val="{{false}}">
+    <div>
+      <div style="background:#8B9678;padding:58px 20px 18px;display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div onClick="{{closeOverlay}}" style="width:36px;height:36px;border-radius:50%;background:rgba(245,241,230,0.9);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0">
+            <svg width="9" height="15" viewBox="0 0 8 14"><path d="M7 1L1 7l6 6" stroke="#2B2B24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <img src="./assets/mayatt-logo-bold.png" alt="Mayatt" style="height:34px;object-fit:contain"/>
+        </div>
+        <div onClick="{{goProfile}}" style="display:flex;align-items:center;gap:9px;cursor:pointer">
+          <div style="text-align:right">
+            <div style="font-size:10.5px;color:#E7E9DC">Bienvenido</div>
+            <div style="font-size:13px;color:#F8F6EF;font-weight:600">Camila Torres</div>
+            <div onClick="{{openWallet}}" style="margin-top:5px;display:inline-flex;align-items:center;gap:5px;background:rgba(245,241,230,0.25);border-radius:20px;padding:4px 10px;cursor:pointer">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="3" stroke="#F8F6EF" stroke-width="1.8"/><path d="M3 9h18" stroke="#F8F6EF" stroke-width="1.8"/><circle cx="17" cy="14" r="1.3" fill="#F8F6EF"/></svg>
+              <div style="font-size:11px;color:#F8F6EF;font-weight:600">$120.00</div>
+            </div>
+          </div>
+          <div style="width:40px;height:40px;border-radius:50%;background:#F5F1E6;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" fill="#8B9678"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="#8B9678"/></svg>
+          </div>
+        </div>
+      </div>
+      <div style="padding:14px 20px 28px">
+        <img src="./assets/piscina-photo.jpeg" alt="Pasadía" style="width:100%;height:220px;object-fit:cover;border-radius:20px;display:block"/>
+        <div style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:600;color:#2B2B24;margin-top:16px">Pasadía Mayatt</div>
+        <div style="display:flex;gap:16px;margin-top:10px">
+          <div style="font-size:13px;color:#5A6B4A;font-weight:600;background:#DCE1CC;padding:5px 12px;border-radius:20px">Día completo</div>
+          <div style="font-size:13px;color:#5A6B4A;font-weight:600;background:#DCE1CC;padding:5px 12px;border-radius:20px">$40 / persona</div>
+          <div style="font-size:13px;color:#5A6B4A;font-weight:600;background:#DCE1CC;padding:5px 12px;border-radius:20px">{{pasadiasRemaining}}/45 disponibles</div>
+        </div>
+        <div style="font-size:14.5px;line-height:1.65;color:#4a4a42;margin-top:18px">Disfruta de un día en Mayatt sin hospedarte: acceso a piscina natural, playa privada, sauna y áreas comunes, con almuerzo incluido en el Eco Restaurante.</div>
+        <div onClick="{{closeOverlay}}" style="margin-top:24px;background:#6F8258;color:#F5F1E6;text-align:center;padding:15px;border-radius:16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;cursor:pointer">Reservar Pasadía</div>
+        <div onClick="{{openTransferPasadia}}" style="margin-top:10px;background:#FBF9F2;color:#3f4d33;text-align:center;padding:15px;border-radius:16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;cursor:pointer">Transferir Pasadía</div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ OVERLAY: TRANSFER NIGHT ============ -->
+    <sc-if value="{{isTransfer}}" hint-placeholder-val="{{false}}">
+    <div>
+      <div style="padding:16px 16px 0;padding-top:54px">
+        <div onClick="{{closeOverlay}}" style="width:38px;height:38px;border-radius:50%;background:#FBF9F2;display:flex;align-items:center;justify-content:center;cursor:pointer">
+          <svg width="10" height="17" viewBox="0 0 8 14"><path d="M7 1L1 7l6 6" stroke="#2B2B24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <sc-if value="{{transferDone}}" hint-placeholder-val="{{false}}">
+      <div style="padding:40px 24px 28px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div style="width:64px;height:64px;border-radius:50%;background:#6F8258;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="#F5F1E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div style="font-family:'Poppins',sans-serif;font-size:20px;font-weight:600;color:#2B2B24">{{transferDoneTitle}}</div>
+        <div style="font-size:13.5px;color:#6b6b60;margin-top:8px;line-height:1.5">{{transferDoneMsg}}</div>
+        <div onClick="{{closeOverlay}}" style="width:100%;box-sizing:border-box;margin-top:24px;background:#6F8258;color:#F5F1E6;text-align:center;padding:15px;border-radius:16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;cursor:pointer">Volver al Perfil</div>
+      </div>
+      </sc-if>
+      <sc-if value="{{transferPending}}" hint-placeholder-val="{{true}}">
+      <div style="padding:14px 20px 28px">
+        <div style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:600;color:#2B2B24">{{transferTitle}}</div>
+        <div style="font-size:13.5px;color:#6b6b60;margin-top:6px;line-height:1.5">{{transferSubtitle}}</div>
+        <div style="background:#DCE1CC;border-radius:16px;padding:14px;margin-top:18px;font-size:13px;color:#3f4d33;font-weight:600">{{transferItemLabel}}</div>
+        <input placeholder="Correo del destinatario" value="{{transferEmail}}" onChange="{{setTransferEmail}}" style="width:100%;box-sizing:border-box;margin-top:14px;background:#FBF9F2;border:none;border-radius:14px;padding:15px;font-size:14.5px;color:#2B2B24;font-family:'Inter',sans-serif;outline:none"/>
+        <div onClick="{{confirmTransfer}}" style="margin-top:20px;background:{{transferCtaBg}};color:#F5F1E6;text-align:center;padding:15px;border-radius:16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;cursor:pointer">Transferir</div>
+      </div>
+      </sc-if>
+    </div>
+    </sc-if>
+
+    <!-- ============ OVERLAY: EXPERIENCE DETAIL ============ -->
+    <sc-if value="{{isExpDetail}}" hint-placeholder-val="{{false}}">
+    <div>
+      <div style="padding:16px 16px 0;padding-top:54px">
+        <div onClick="{{closeOverlay}}" style="width:38px;height:38px;border-radius:50%;background:#FBF9F2;display:flex;align-items:center;justify-content:center;cursor:pointer">
+          <svg width="10" height="17" viewBox="0 0 8 14"><path d="M7 1L1 7l6 6" stroke="#2B2B24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div style="padding:14px 20px 28px">
+        <image-slot id="{{currentExp.imgId}}" shape="rounded" radius="20" placeholder="{{currentExp.placeholder}}" src="{{currentExp.imgSrc}}" style="width:100%;height:220px"></image-slot>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-top:16px">
+          <div style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:600;color:#2B2B24;max-width:270px;line-height:1.25">{{currentExp.name}}</div>
+          <div onClick="{{currentExp.toggleFav}}" style="width:38px;height:38px;flex-shrink:0;display:flex;align-items:center;justify-content:center">{{currentExp.heartIconLg}}</div>
+        </div>
+        <div style="display:flex;gap:16px;margin-top:10px">
+          <div style="font-size:13px;color:#5A6B4A;font-weight:600;background:#DCE1CC;padding:5px 12px;border-radius:20px">{{currentExp.duration}}</div>
+          <div style="font-size:13px;color:#5A6B4A;font-weight:600;background:#DCE1CC;padding:5px 12px;border-radius:20px">{{currentExp.price}}</div>
+        </div>
+        <div style="font-size:14.5px;line-height:1.65;color:#4a4a42;margin-top:18px">{{currentExp.description}}</div>
+        <div onClick="{{reserveExperience}}" style="margin-top:24px;background:#6F8258;color:#F5F1E6;text-align:center;padding:15px;border-radius:16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;cursor:pointer">Reservar Experiencia</div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ OVERLAY: MAP FULL ============ -->
+    <sc-if value="{{isMapFull}}" hint-placeholder-val="{{false}}">
+    <div>
+      <div style="padding:16px 16px 0;padding-top:54px;display:flex;align-items:center;gap:12px">
+        <div onClick="{{closeOverlay}}" style="width:38px;height:38px;border-radius:50%;background:#FBF9F2;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0">
+          <svg width="10" height="17" viewBox="0 0 8 14"><path d="M7 1L1 7l6 6" stroke="#2B2B24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div style="font-family:'Poppins',sans-serif;font-size:20px;font-weight:600;color:#2B2B24">Mapa del Hotel</div>
+      </div>
+      <div style="padding:14px 20px 28px">
+        <img src="./assets/hotel-map.jpeg" alt="Mapa del Hotel" style="width:100%;height:260px;object-fit:cover;border-radius:20px;display:block"/>
+        <div style="margin-top:20px;display:flex;flex-direction:column;gap:2px">
+          <sc-for list="{{mapLocations}}" as="loc" hint-placeholder-count="6">
+            <div style="display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:0.5px solid rgba(0,0,0,0.06)">
+              <div style="width:10px;height:10px;border-radius:50%;background:{{loc.color}};flex-shrink:0"></div>
+              <div style="font-size:15px;color:#2B2B24;flex:1">{{loc.name}}</div>
+              <div style="font-size:12px;color:#6b6b60">{{loc.distance}}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ OVERLAY: IMPACT FULL ============ -->
+    <sc-if value="{{isImpactFull}}" hint-placeholder-val="{{false}}">
+    <div>
+      <div style="padding:16px 16px 0;padding-top:54px;display:flex;align-items:center;gap:12px">
+        <div onClick="{{closeOverlay}}" style="width:38px;height:38px;border-radius:50%;background:#FBF9F2;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0">
+          <svg width="10" height="17" viewBox="0 0 8 14"><path d="M7 1L1 7l6 6" stroke="#2B2B24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div style="font-family:'Poppins',sans-serif;font-size:20px;font-weight:600;color:#2B2B24">Eventos y Próximos Destinos</div>
+      </div>
+      <div style="padding:14px 20px 8px">
+        <img src="./assets/destino-cartagena.jpeg" alt="Cartagena — Zona Norte 2026" style="width:100%;border-radius:20px;display:block"/>
+      </div>
+      <div style="padding:6px 20px 4px;font-size:13px;color:#6b6b60;text-transform:uppercase;letter-spacing:0.5px;font-weight:600">Próximos destinos</div>
+      <div style="padding:8px 20px 28px;display:flex;flex-direction:column;gap:14px">
+        <img src="./assets/destinos-proximos-1.jpeg" alt="Santa Marta y Barú" style="width:100%;border-radius:16px;display:block"/>
+        <img src="./assets/destinos-proximos-2.jpeg" alt="Guatapé y Eje Cafetero" style="width:100%;border-radius:16px;display:block"/>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ OVERLAY: BOOKING FLOW ============ -->
+    <sc-if value="{{isBooking}}" hint-placeholder-val="{{false}}">
+    <div style="min-height:100%;display:flex;flex-direction:column">
+      <div style="position:relative;background:#8B9678;padding:58px 20px 18px;display:flex;align-items:center;justify-content:space-between;overflow:hidden">
+        <img src="./assets/rooftop-photo.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+        <div style="position:absolute;inset:0;background:rgba(139,150,120,0.88)"></div>
+        <div style="position:relative;display:flex;align-items:center;gap:12px">
+          <div onClick="{{bookingBack}}" style="width:36px;height:36px;border-radius:50%;background:rgba(245,241,230,0.9);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0">
+            <svg width="9" height="15" viewBox="0 0 8 14"><path d="M7 1L1 7l6 6" stroke="#2B2B24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <img src="./assets/mayatt-logo-bold.png" alt="Mayatt" style="height:34px;object-fit:contain"/>
+        </div>
+        <div onClick="{{goProfile}}" style="position:relative;display:flex;align-items:center;gap:9px;cursor:pointer">
+          <div style="text-align:right">
+            <div style="font-size:10.5px;color:#E7E9DC">Bienvenido</div>
+            <div style="font-size:13px;color:#F8F6EF;font-weight:600">Camila Torres</div>
+            <div onClick="{{openWallet}}" style="margin-top:5px;display:inline-flex;align-items:center;gap:5px;background:rgba(245,241,230,0.25);border-radius:20px;padding:4px 10px;cursor:pointer">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="3" stroke="#F8F6EF" stroke-width="1.8"/><path d="M3 9h18" stroke="#F8F6EF" stroke-width="1.8"/><circle cx="17" cy="14" r="1.3" fill="#F8F6EF"/></svg>
+              <div style="font-size:11px;color:#F8F6EF;font-weight:600">$120.00</div>
+            </div>
+          </div>
+          <div style="width:40px;height:40px;border-radius:50%;flex-shrink:0;overflow:hidden">
+            <image-slot id="home-avatar" shape="circle" placeholder="foto" style="width:100%;height:100%"></image-slot>
+          </div>
+        </div>
+      </div>
+      <div style="padding:14px 20px 0;display:flex;align-items:center;justify-content:space-between">
+        <div style="font-family:'Poppins',sans-serif;font-size:18px;font-weight:600;color:#2B2B24">{{bookingStepTitle}}</div>
+        <div style="display:flex;align-items:center;gap:6px;background:#DCE1CC;border-radius:20px;padding:4px 9px">
+          <div style="font-size:11px;color:#3f4d33;font-weight:600">{{nightsRemaining}}/15 noches</div>
+        </div>
+      </div>
+      <div style="padding:6px 20px 0">
+        <div style="display:flex;gap:6px;margin-bottom:10px">
+          <div style="flex:1;height:4px;border-radius:4px;background:{{step1Bar}}"></div>
+          <div style="flex:1;height:4px;border-radius:4px;background:{{step2Bar}}"></div>
+          <div style="flex:1;height:4px;border-radius:4px;background:{{step3Bar}}"></div>
+          <div style="flex:1;height:4px;border-radius:4px;background:{{step4Bar}}"></div>
+          <div style="flex:1;height:4px;border-radius:4px;background:{{step5Bar}}"></div>
+        </div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;min-height:0">
+      <!-- step 1: selection -->
+      <sc-if value="{{isStep1}}" hint-placeholder-val="{{true}}">
+      <div style="padding:0 20px 14px;display:flex;flex-direction:column;gap:12px;flex:1">
+        <sc-for list="{{rooms}}" as="room" hint-placeholder-count="3">
+          <div onClick="{{room.select}}" style="background:{{room.bg}};border:2px solid {{room.border}};border-radius:18px;padding:11px;display:flex;gap:12px;align-items:center;cursor:pointer;flex:1">
+            <image-slot id="{{room.imgId}}" shape="rounded" radius="14" placeholder="{{room.placeholder}}" src="{{room.imgSrc}}" style="width:118px;height:118px;flex-shrink:0"></image-slot>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;gap:6px">
+                <div style="font-family:'Poppins',sans-serif;font-size:16.5px;font-weight:600;color:#2B2B24">{{room.name}}</div>
+                <div style="font-size:14px;color:#5A6B4A;font-weight:600;white-space:nowrap">{{room.priceLabel}}</div>
+              </div>
+              <div style="font-size:12.5px;color:#6b6b60;margin-top:3px">{{room.capacity}}</div>
+              <div style="display:flex;gap:6px;margin-top:9px">
+                <sc-for list="{{room.seasons}}" as="season" hint-placeholder-count="3">
+                  <div onClick="{{season.select}}" title="{{season.label}}" style="width:26px;height:26px;border-radius:50%;background:{{season.bg}};display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer;border:1.5px solid {{season.border}}">{{season.icon}}</div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="width:22px;height:22px;border-radius:50%;border:2px solid #6F8258;display:flex;align-items:center;justify-content:center;flex-shrink:0">{{room.dot}}</div>
+          </div>
+        </sc-for>
+      </div>
+      </sc-if>
+
+      <!-- step 2: extras -->
+      <sc-if value="{{isStep2}}" hint-placeholder-val="{{false}}">
+      <div style="padding:0 20px 28px;display:flex;flex-direction:column;gap:10px">
+        <img src="./assets/spa-photo.jpeg" alt="Spa" style="width:100%;height:180px;object-fit:cover;border-radius:18px;display:block;margin-bottom:2px"/>
+        <sc-for list="{{extras}}" as="ex" hint-placeholder-count="4">
+          <div onClick="{{ex.toggle}}" style="background:#FBF9F2;border-radius:16px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer">
+            <div style="width:24px;height:24px;border-radius:7px;border:2px solid #6F8258;background:{{ex.checkBg}};display:flex;align-items:center;justify-content:center;flex-shrink:0">{{ex.check}}</div>
+            <div style="flex:1">
+              <div style="font-size:14.5px;color:#2B2B24;font-weight:500">{{ex.name}}</div>
+              <div style="font-size:12px;color:#6b6b60;margin-top:2px">{{ex.desc}}</div>
+            </div>
+            <div style="font-size:14px;color:#5A6B4A;font-weight:600">{{ex.priceLabel}}</div>
+          </div>
+        </sc-for>
+      </div>
+      </sc-if>
+
+      <!-- step 3: dates / calendar -->
+      <sc-if value="{{isStep3}}" hint-placeholder-val="{{false}}">
+      <div style="padding:0 20px 10px;display:flex;flex-direction:column;gap:10px">
+        <div style="background:#FBF9F2;border-radius:18px;padding:14px;display:flex;gap:14px;align-items:center">
+          <image-slot id="{{selectedRoom.imgId}}" shape="rounded" radius="16" placeholder="{{selectedRoom.placeholder}}" src="{{selectedRoom.imgSrc}}" style="width:130px;height:130px;flex-shrink:0"></image-slot>
+          <div style="flex:1;min-width:0">
+            <div style="font-family:'Poppins',sans-serif;font-size:16.5px;font-weight:600;color:#2B2B24">{{selectedRoom.name}}</div>
+            <div style="font-size:13px;color:#6b6b60;margin-top:5px">{{selectedRoom.capacity}}</div>
+            <div style="font-size:13px;color:#6b6b60;margin-top:3px">{{selectedRoom.beds}} · {{selectedRoom.size}}</div>
+          </div>
+        </div>
+        <div style="position:relative;background:#FBF9F2;border-radius:18px;padding:16px;overflow:hidden">
+          <img src="./assets/calendar-watermark.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.07;pointer-events:none"/>
+          <div style="position:relative;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+            <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:#2B2B24">{{monthLabel}}</div>
+            <div style="font-size:12px;color:#5A6B4A;font-weight:600">{{dateRangeLabel}}</div>
+          </div>
+          <div style="position:relative;display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px">
+            <sc-for list="{{weekdays}}" as="wd" hint-placeholder-count="7">
+              <div style="text-align:center;font-size:10.5px;color:#6b6b60;font-weight:600">{{wd}}</div>
+            </sc-for>
+          </div>
+          <div style="position:relative;display:grid;grid-template-columns:repeat(7,1fr);gap:4px">
+            <sc-for list="{{calendarDays}}" as="cell" hint-placeholder-count="35">
+              <div onClick="{{cell.select}}" style="aspect-ratio:1;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:12.5px;background:{{cell.bg}};color:{{cell.color}};text-decoration:{{cell.textDecoration}};cursor:pointer">{{cell.day}}</div>
+            </sc-for>
+          </div>
+          <div style="position:relative;display:flex;gap:10px;margin-top:10px;font-size:11px;color:#6b6b60">
+            <div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;border-radius:50%;background:#6F8258"></div>Seleccionado</div>
+            <div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;border-radius:50%;background:#C0453A"></div>No disponible</div>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+
+      <!-- step 4: payment -->
+      <sc-if value="{{isStep4}}" hint-placeholder-val="{{false}}">
+      <div style="padding:0 20px 28px;display:flex;flex-direction:column;gap:8px">
+        <div style="background:#FBF9F2;border-radius:18px;padding:12px;display:flex;gap:12px;align-items:center">
+          <image-slot id="{{selectedRoom.imgId}}" shape="rounded" radius="14" placeholder="{{selectedRoom.placeholder}}" src="{{selectedRoom.imgSrc}}" style="width:84px;height:84px;flex-shrink:0"></image-slot>
+          <div style="flex:1;min-width:0">
+            <div style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:#2B2B24">{{selectedRoom.name}}</div>
+            <div style="font-size:12px;color:#6b6b60;margin-top:3px">{{selectedRoom.capacity}}</div>
+            <div style="font-size:12px;color:#6b6b60;margin-top:2px">{{selectedRoom.beds}} · {{selectedRoom.size}}</div>
+          </div>
+        </div>
+        <div style="background:#DCE1CC;border-radius:16px;padding:14px;display:flex;justify-content:space-between;font-size:14px;color:#3f4d33;font-weight:600">
+          <div>Total a pagar</div><div>{{totalPrice}}</div>
+        </div>
+        <input placeholder="Nombre en la tarjeta" value="{{payName}}" onChange="{{setPayName}}" style="background:#FBF9F2;border:none;border-radius:12px;padding:11px 14px;font-size:14.5px;color:#2B2B24;font-family:'Inter',sans-serif;outline:none;box-sizing:border-box"/>
+        <input placeholder="Número de tarjeta" value="{{payNumber}}" onChange="{{setPayNumber}}" style="background:#FBF9F2;border:none;border-radius:12px;padding:11px 14px;font-size:14.5px;color:#2B2B24;font-family:'Inter',sans-serif;outline:none;box-sizing:border-box"/>
+        <div style="display:flex;gap:12px">
+          <input placeholder="MM/AA" value="{{payExpiry}}" onChange="{{setPayExpiry}}" style="flex:1;background:#FBF9F2;border:none;border-radius:12px;padding:11px 14px;font-size:14.5px;color:#2B2B24;font-family:'Inter',sans-serif;outline:none;box-sizing:border-box"/>
+          <input placeholder="CVV" value="{{payCvv}}" onChange="{{setPayCvv}}" style="flex:1;background:#FBF9F2;border:none;border-radius:12px;padding:11px 14px;font-size:14.5px;color:#2B2B24;font-family:'Inter',sans-serif;outline:none;box-sizing:border-box"/>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+          <div style="background:#FBF9F2;border-radius:8px;padding:6px 12px;font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:700;color:#1A1F71;letter-spacing:0.5px">VISA</div>
+          <div style="background:#FBF9F2;border-radius:8px;padding:6px 12px;font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:700;color:#003087">PayPal</div>
+          <div style="background:#FBF9F2;border-radius:8px;padding:6px 12px;font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:600;color:#2B2B24"> Pay</div>
+          <div style="background:#FBF9F2;border-radius:8px;padding:6px 12px;font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:700;color:#26A17B">USDT</div>
+        </div>
+        <img src="./assets/payment-banner.jpeg" alt="Mayatt Eco Luxury Hotel" style="width:100%;border-radius:16px;display:block;margin-top:4px"/>
+      </div>
+      </sc-if>
+
+      <!-- step 5: confirmation -->
+      <sc-if value="{{isStep5}}" hint-placeholder-val="{{false}}">
+      <div style="position:relative;padding:20px 24px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;min-height:100%;overflow:hidden">
+        <img src="./assets/confirmation-bg-pool.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,241,230,0.75) 0%,#F5F1E6 55%)"></div>
+        <div style="width:64px;height:64px;border-radius:50%;background:#6F8258;display:flex;align-items:center;justify-content:center;margin-bottom:16px;position:relative">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="#F5F1E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div style="font-family:'Poppins',sans-serif;font-size:21px;font-weight:600;color:#2B2B24;position:relative">¡Reserva Confirmada!</div>
+        <div style="font-size:16px;color:#6b6b60;margin-top:8px;line-height:1.5;position:relative">Bienvenido a Mayatt. Te enviamos los detalles a tu correo</div>
+        <img src="./assets/confirmation-banner.jpeg" alt="Mayatt Eco Luxury Hotel" style="width:100%;border-radius:16px;display:block;margin-top:18px;position:relative"/>
+        <div style="width:100%;background:#FBF9F2;border-radius:18px;padding:18px;margin-top:22px;text-align:left;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden">
+          <img src="./assets/confirmation-bg-pool.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.15"/>
+          <div style="display:flex;justify-content:space-between;position:relative"><div style="color:#6b6b60;font-size:13px">Habitación</div><div style="color:#2B2B24;font-size:13.5px;font-weight:600">{{bookedRoomName}}</div></div>
+          <div style="display:flex;justify-content:space-between;position:relative"><div style="color:#6b6b60;font-size:13px">Fechas</div><div style="color:#2B2B24;font-size:13.5px;font-weight:600">{{bookingSummaryLine}}</div></div>
+          <div style="display:flex;justify-content:space-between;position:relative"><div style="color:#6b6b60;font-size:13px">Total</div><div style="color:#2B2B24;font-size:13.5px;font-weight:600">{{totalPrice}}</div></div>
+          <div style="display:flex;justify-content:space-between;border-top:0.5px solid rgba(0,0,0,0.08);padding-top:10px;position:relative"><div style="color:#6b6b60;font-size:13px">Código</div><div style="color:#5A6B4A;font-size:13.5px;font-weight:700">{{confirmationCode}}</div></div>
+        </div>
+        <div onClick="{{finishBooking}}" style="width:100%;box-sizing:border-box;margin-top:22px;background:#6F8258;color:#F5F1E6;text-align:center;padding:15px;border-radius:16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;cursor:pointer;position:relative">Volver al Inicio</div>
+      </div>
+      </sc-if>
+
+      <div style="flex:{{spacerFlex}}"></div>
+
+      <!-- footer CTA for steps 1-3 -->
+      <sc-if value="{{showBookingCta}}" hint-placeholder-val="{{true}}">
+      <div style="padding:6px 20px {{ctaBottomPad}}">
+        <div onClick="{{bookingNext}}" style="background:{{ctaBg}};color:#F5F1E6;text-align:center;padding:13px;border-radius:16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;cursor:pointer">{{ctaLabel}}</div>
+      </div>
+      </sc-if>
+      </div>
+    </div>
+    </sc-if>
+
+  </div>
+
+  <sc-if value="{{isPerfil}}" hint-placeholder-val="{{false}}">
+  <div style="position:absolute;right:20px;bottom:96px;width:52px;height:52px;border-radius:50%;background:#6F8258;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,0.25);z-index:40">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 00-7 7v3.5c0 .8-.3 1.6-.9 2.2L3 16h18l-1.1-1.3a3 3 0 01-.9-2.2V9a7 7 0 00-7-7z" fill="#F5F1E6"/><circle cx="12" cy="19.5" r="1.8" fill="#F5F1E6"/><circle cx="9" cy="9" r="1.3" fill="#6F8258"/><circle cx="12" cy="9" r="1.3" fill="#6F8258"/><circle cx="15" cy="9" r="1.3" fill="#6F8258"/></svg>
+  </div>
+  </sc-if>
+
+  <!-- ============ TAB BAR ============ -->
+  <sc-if value="{{showTabBar}}" hint-placeholder-val="{{true}}">
+  <div style="display:flex;justify-content:space-around;padding:10px 8px 22px;background:#F8F6EF;border-top:0.5px solid rgba(0,0,0,0.06);flex-shrink:0">
+    <div onClick="{{go_home}}" style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;width:64px">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-8 9 8v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9z" fill="{{tabHomeColor}}"/></svg>
+      <div style="font-size:10.5px;color:{{tabHomeColor}};font-weight:600">Inicio</div>
+    </div>
+    <div onClick="{{go_explorar}}" style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;width:64px">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C7 2 3 6 3 11c0 5.5 9 11 9 11s9-5.5 9-11c0-5-4-9-9-9z" stroke="{{tabExplorarColor}}" stroke-width="1.8" fill="none"/><circle cx="12" cy="11" r="3" stroke="{{tabExplorarColor}}" stroke-width="1.8" fill="none"/></svg>
+      <div style="font-size:10.5px;color:{{tabExplorarColor}};font-weight:600">Experiencia</div>
+    </div>
+    <div onClick="{{go_wallet}}" style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;width:64px">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="3" stroke="{{tabWalletColor}}" stroke-width="1.8"/><path d="M3 9h18" stroke="{{tabWalletColor}}" stroke-width="1.8"/><circle cx="17" cy="14" r="1.3" fill="{{tabWalletColor}}"/></svg>
+      <div style="font-size:10.5px;color:{{tabWalletColor}};font-weight:600">Wallet</div>
+    </div>
+    <div onClick="{{openBooking}}" style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;width:64px">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="3" stroke="{{tabReservarColor}}" stroke-width="1.8"/><path d="M3 10h18M8 3v4M16 3v4" stroke="{{tabReservarColor}}" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <div style="font-size:10.5px;color:{{tabReservarColor}};font-weight:600">Reservar</div>
+    </div>
+  </div>
+  </sc-if>
+
+</div>
+</x-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:500,&quot;height&quot;:950},&quot;hotelName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;nuevo, Eco-Lodge&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;tagline&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;ECO-LODGE&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showImpactOnHome&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const EXPERIENCES = [
+  { id: 'senderos', name: 'Rooftop', tagline: 'Disfruta de una experiencia única cerca del mar', placeholder: 'foto: rooftop', duration: '2h', price: '$25', description: 'Disfruta de una experiencia única cerca del mar, con vistas al atardecer, coctelería artesanal y música en vivo en nuestro rooftop frente al océano.', imgSrc: './assets/rooftop-photo.jpeg' },
+  { id: 'spa', name: 'SPA', tagline: 'Disfruta de un refugio de bienestar y relajación', placeholder: 'foto: spa natural', duration: '1.5h', price: '$45', description: 'Tratamientos de bienestar elaborados con ingredientes cultivados en nuestra finca orgánica: sales minerales, aceites esenciales y flores frescas de la región.', imgSrc: './assets/spa-photo.jpeg' },
+  { id: 'gastro', name: 'Eco Restaurante', tagline: 'Disfruta de Gastronomía local Sostenible', placeholder: 'foto: gastronomía', duration: '3h', price: '$38', description: 'Una experiencia culinaria de la huerta a la mesa, con ingredientes de nuestro huerto orgánico y productores locales. Incluye maridaje con bebidas artesanales de la zona.', imgSrc: './assets/restaurant-photo.jpeg' },
+  { id: 'aves', name: 'Baño Turco', tagline: 'Bruma que Suspende', placeholder: 'foto: baño turco', duration: '2.5h', price: '$30', description: 'Un ritual de calor y vapor envuelto en madera natural, diseñado para liberar tensiones y suspender el tiempo en un ambiente sereno.', imgSrc: './assets/turco-photo.jpeg' },
+  { id: 'compost', name: 'Sauna', tagline: 'Calor que abraza el alma', placeholder: 'foto: sauna', duration: '1h', price: '$15', description: 'Un espacio de madera cálida donde el calor envolvente relaja el cuerpo y calma la mente, ideal para cerrar el día en armonía.', imgSrc: './assets/sauna-photo.jpeg' },
+  { id: 'piscina', name: 'Piscina Natural', tagline: 'Bienestar en Movimiento', placeholder: 'foto: piscina natural', duration: '2h', price: '$20', description: 'Sumérgete en nuestra piscina natural frente al mar, un espacio de aguas tranquilas rodeado de arena y vegetación para moverte en calma.', imgSrc: './assets/piscina-photo.jpeg' },
+];
+
+const ROOMS = [
+  { id: 'cabana', name: 'Cabaña Río', placeholder: 'foto: cabaña río', capacity: '2 huéspedes · Vista a la piscina', beds: '1 cama King', size: '38 m²', price: 120, imgSrc: './assets/cabana-rio.jpeg' },
+  { id: 'suite', name: 'Suite Dosel', placeholder: 'foto: suite dosel', capacity: '2 huéspedes · Vista al mar', beds: '1 cama Queen', size: '42 m²', price: 180, imgSrc: './assets/suite-dosel.jpeg' },
+  { id: 'bungalow', name: 'Bungalow Jardín', placeholder: 'foto: bungalow jardín', capacity: '4 huéspedes · Jardines privados', beds: '2 camas Queen', size: '60 m²', price: 150, imgSrc: './assets/bungalow-jardin.jpeg' },
+];
+
+const EXTRAS = [
+  { id: 'desayuno', name: 'Desayuno Orgánico', desc: 'Cada mañana, ingredientes de la huerta', price: 12 },
+  { id: 'traslado', name: 'Traslado Aeropuerto', desc: 'Ida y vuelta en vehículo eléctrico', price: 35 },
+  { id: 'spa', name: 'Sesión de Spa', desc: 'Tratamiento de 60 minutos', price: 45 },
+  { id: 'tour', name: 'Tour Guiado por la Selva', desc: 'Grupo reducido, guía certificado', price: 25 },
+];
+
+const MAP_LOCATIONS = [
+  { name: 'Edificio Central · 3 niveles', distance: '0 min', color: '#6F8258' },
+  { name: 'Piscina Natural (280 m²)', distance: '1 min', color: '#4C8AB9' },
+  { name: 'Villa Premium 1', distance: '2 min', color: '#B98A4C' },
+  { name: 'Villa Premium 2', distance: '2 min', color: '#B98A4C' },
+  { name: 'Villas 1–9', distance: '3 min', color: '#5FA35C' },
+  { name: 'Villas 10–18', distance: '3 min', color: '#5FA35C' },
+  { name: 'Estacionamiento', distance: '4 min', color: '#8A8A80' },
+];
+
+const IMPACT_STATS = [
+  { emoji: '💧', label: 'Ahorro de Agua', value: '1.240L' },
+  { emoji: '⚡', label: 'Ahorro de Energía', value: '890kWh' },
+  { emoji: '♻️', label: 'Residuos Reciclados', value: '340kg' },
+  { emoji: '🌳', label: 'Árboles Protegidos', value: '58' },
+];
+
+const UNAVAILABLE_BY_ROOM = {
+  cabana: [3, 4, 11, 12, 19, 20, 27],
+  suite: [1, 2, 8, 9, 15, 16, 22, 23, 29, 30],
+  bungalow: [5, 6, 13, 14, 21, 28],
+};
+const WEEKDAYS = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
+const MONTH_LABEL = 'Agosto 2026';
+const MONTH_FIRST_WEEKDAY = 5; // Aug 1 2026 is a Saturday -> index 5 (0=Mon)
+const MONTH_DAYS = 31;
+
+const GREEN = '#6F8258';
+const GRAY = 'rgba(43,43,36,0.35)';
+
+function heart(filled, size) {
+  const s = size || 18;
+  return React.createElement('svg', { width: s, height: s, viewBox: '0 0 24 24', fill: 'none' },
+    React.createElement('path', {
+      d: 'M12 20s-7.5-4.6-9.7-9C.7 7.5 2.5 4 6 4c2 0 3.5 1.2 4.5 2.8C11.5 5.2 13 4 15 4c3.5 0 5.3 3.5 3.7 7-2.2 4.4-9.7 9-9.7 9z',
+      fill: filled ? '#B9584C' : 'none', stroke: filled ? '#B9584C' : GRAY, strokeWidth: 1.8,
+    })
+  );
+}
+
+class Component extends DCLogic {
+  state = {
+    tab: 'home',
+    overlay: null,
+    favorites: {},
+    selectedExpId: null,
+    bookingStep: 1,
+    roomId: null,
+    nights: 2,
+    guests: 2,
+    checkIn: null,
+    checkOut: null,
+    extras: {},
+    roomSeasons: {},
+    payName: '', payNumber: '', payExpiry: '', payCvv: '',
+    confirmationCode: '',
+    hasBooking: false,
+    nightsUsed: 0,
+    pasadiasUsed: 0,
+    transferEmail: '',
+    transferDone: false,
+    transferKind: 'noche',
+  };
+
+  go = (tab) => () => this.setState({ tab, overlay: null });
+  openBooking = () => this.setState({ overlay: 'booking', bookingStep: 1 });
+  openExp = (id) => () => this.setState({ overlay: 'exp', selectedExpId: id });
+  openMap = () => this.setState({ overlay: 'map' });
+  openPasadia = () => this.setState({ overlay: 'pasadia' });
+  openImpact = () => this.setState({ overlay: 'impact' });
+  goProfile = () => this.setState({ tab: 'perfil', overlay: null });
+  closeOverlay = () => this.setState({ overlay: null, transferDone: false, transferEmail: '' });
+  openTransfer = () => this.setState({ overlay: 'transfer', transferDone: false, transferEmail: '', transferKind: 'noche' });
+  openTransferPasadia = () => this.setState({ overlay: 'transfer', transferDone: false, transferEmail: '', transferKind: 'pasadia' });
+  setTransferEmail = (e) => this.setState({ transferEmail: e.target.value });
+  confirmTransfer = () => {
+    if (!this.state.transferEmail.trim()) return;
+    if (this.state.transferKind === 'noche') {
+      if (this.state.nightsUsed >= 15) return;
+      this.setState((s) => ({ nightsUsed: Math.min(15, s.nightsUsed + 1), transferDone: true }));
+    } else {
+      if (this.state.pasadiasUsed >= 45) return;
+      this.setState((s) => ({ pasadiasUsed: Math.min(45, s.pasadiasUsed + 1), transferDone: true }));
+    }
+  };
+
+  toggleFav = (id) => () => this.setState((s) => ({ favorites: { ...s.favorites, [id]: !s.favorites[id] } }));
+
+  selectRoom = (id) => () => this.setState({ roomId: id });
+  selectDay = (day, unavailable) => () => {
+    if (unavailable) return;
+    this.setState((s) => {
+      if (!s.checkIn || s.checkOut) return { checkIn: day, checkOut: null };
+      if (day > s.checkIn) return { checkOut: day };
+      return { checkIn: day, checkOut: null };
+    });
+  };
+  selectSeason = (roomId, season) => (e) => { e.stopPropagation(); this.setState((s) => ({ roomSeasons: { ...s.roomSeasons, [roomId]: season } })); };
+  nightsUp = () => this.setState((s) => ({ nights: Math.min(14, s.nights + 1) }));
+  nightsDown = () => this.setState((s) => ({ nights: Math.max(1, s.nights - 1) }));
+  guestsUp = () => this.setState((s) => ({ guests: Math.min(8, s.guests + 1) }));
+  guestsDown = () => this.setState((s) => ({ guests: Math.max(1, s.guests - 1) }));
+  toggleExtra = (id) => () => this.setState((s) => ({ extras: { ...s.extras, [id]: !s.extras[id] } }));
+
+  setPayName = (e) => this.setState({ payName: e.target.value });
+  setPayNumber = (e) => this.setState({ payNumber: e.target.value });
+  setPayExpiry = (e) => this.setState({ payExpiry: e.target.value });
+  setPayCvv = (e) => this.setState({ payCvv: e.target.value });
+
+  bookingBack = () => {
+    const s = this.state;
+    if (s.bookingStep > 1 && s.bookingStep < 5) this.setState({ bookingStep: s.bookingStep - 1 });
+    else this.setState({ overlay: null });
+  };
+
+  bookingNext = () => {
+    const s = this.state;
+    if (s.bookingStep === 1) {
+      if (!s.roomId) return;
+      this.setState({ bookingStep: 2 });
+    } else if (s.bookingStep === 2) {
+      this.setState({ bookingStep: 3 });
+    } else if (s.bookingStep === 3) {
+      this.setState({ bookingStep: 4 });
+    } else if (s.bookingStep === 4) {
+      const code = 'EL-' + Math.random().toString(36).slice(2, 7).toUpperCase();
+      this.setState((prev) => ({ bookingStep: 5, confirmationCode: code, hasBooking: true, nightsUsed: Math.min(15, prev.nightsUsed + prev.nights) }));
+    }
+  };
+
+  finishBooking = () => this.setState({ overlay: null, tab: 'home', bookingStep: 1 });
+
+  reserveExperience = () => this.setState({ overlay: null, tab: 'home' });
+
+  renderVals() {
+    const s = this.state;
+    const room = ROOMS.find((r) => r.id === s.roomId);
+    const SEASON_MULT_TOTAL = { baja: 0.8, media: 1, alta: 1.3 };
+    const roomPrice = room ? Math.round(room.price * SEASON_MULT_TOTAL[s.roomSeasons[room.id] || 'media']) : 0;
+    const extrasTotal = EXTRAS.reduce((sum, ex) => sum + (s.extras[ex.id] ? ex.price : 0), 0);
+    const total = (room ? roomPrice * s.nights : 0) + extrasTotal;
+    const currentExp = EXPERIENCES.find((e) => e.id === s.selectedExpId) || EXPERIENCES[0];
+
+    const experiences = EXPERIENCES.map((e) => ({
+      ...e, imgId: 'exp-' + e.id, open: this.openExp(e.id), toggleFav: this.toggleFav(e.id),
+      heartIcon: heart(!!s.favorites[e.id], 18),
+      reserve: (ev) => { ev.stopPropagation(); this.openBooking(); },
+    }));
+
+    const favoriteExperiences = experiences.filter((e) => s.favorites[e.id]);
+
+    const SEASON_MULT = { baja: 0.8, media: 1, alta: 1.3 };
+    const SEASON_ICONS = [
+      { key: 'baja', icon: '❄️', label: 'Temporada Baja' },
+      { key: 'media', icon: '🌤️', label: 'Temporada Media' },
+      { key: 'alta', icon: '☀️', label: 'Temporada Alta' },
+    ];
+    const rooms = ROOMS.map((r) => {
+      const selected = s.roomId === r.id;
+      const currentSeason = s.roomSeasons[r.id] || 'media';
+      const price = Math.round(r.price * SEASON_MULT[currentSeason]);
+      return {
+        ...r, imgId: 'room-' + r.id, select: this.selectRoom(r.id),
+        price,
+        priceLabel: '$' + price + ' / noche',
+        bg: selected ? '#DCE1CC' : '#FBF9F2',
+        border: selected ? '#6F8258' : 'transparent',
+        dot: selected ? React.createElement('div', { style: { width: 10, height: 10, borderRadius: '50%', background: '#6F8258' } }) : null,
+        seasons: SEASON_ICONS.map((se) => ({
+          ...se, select: this.selectSeason(r.id, se.key),
+          bg: currentSeason === se.key ? '#6F8258' : '#F5F1E6',
+          border: currentSeason === se.key ? '#6F8258' : 'rgba(0,0,0,0.1)',
+        })),
+      };
+    });
+
+    const extras = EXTRAS.map((ex) => {
+      const checked = !!s.extras[ex.id];
+      return {
+        ...ex, toggle: this.toggleExtra(ex.id), priceLabel: '+$' + ex.price,
+        checkBg: checked ? '#6F8258' : 'transparent',
+        check: checked ? React.createElement('svg', { width: 13, height: 10, viewBox: '0 0 13 10' },
+          React.createElement('path', { d: 'M1 5l4 4 7-8', stroke: '#F5F1E6', strokeWidth: 2, fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' })) : null,
+      };
+    });
+
+    const stepColor = (n) => (s.bookingStep >= n ? GREEN : '#DCE1CC');
+    const unavailableDays = room ? (UNAVAILABLE_BY_ROOM[room.id] || []) : [];
+    const nights = (s.checkIn && s.checkOut) ? (s.checkOut - s.checkIn) : s.nights;
+    const guests = s.guests;
+    const calendarDays = [];
+    for (let i = 0; i < MONTH_FIRST_WEEKDAY; i++) calendarDays.push({ day: '', unavailable: true, select: () => {}, bg: 'transparent', color: 'transparent', textDecoration: 'none' });
+    for (let d = 1; d <= MONTH_DAYS; d++) {
+      const unavailable = unavailableDays.includes(d);
+      const inRange = s.checkIn && s.checkOut && d > s.checkIn && d < s.checkOut;
+      const isEdge = d === s.checkIn || d === s.checkOut;
+      calendarDays.push({
+        day: d, unavailable, select: this.selectDay(d, unavailable),
+        bg: isEdge ? GREEN : inRange ? '#DCE1CC' : 'transparent',
+        color: unavailable ? '#C0453A' : isEdge ? '#F5F1E6' : '#2B2B24',
+        textDecoration: unavailable ? 'line-through' : 'none',
+      });
+    }
+    const dateRangeLabel = (s.checkIn && s.checkOut)
+      ? s.checkIn + ' — ' + s.checkOut + ' Ago · ' + nights + ' noches'
+      : s.checkIn ? 'Check-in: ' + s.checkIn + ' Ago · elige salida' : 'Elige check-in y check-out';
+    const bookingSummaryLine = nights + ' noches · ' + guests + ' huéspedes';
+
+    const tabColor = (name) => (s.tab === name && !s.overlay ? GREEN : GRAY);
+
+    return {
+      hotelName: this.props.hotelName ?? 'nuevo, Eco-Lodge',
+      tagline: this.props.tagline ?? 'ECO-LODGE',
+      showImpactOnHome: this.props.showImpactOnHome ?? true,
+
+      isHome: s.tab === 'home' && !s.overlay,
+      isExplorar: s.tab === 'explorar' && !s.overlay,
+      isWallet: s.tab === 'wallet' && !s.overlay,
+      isFavoritos: s.tab === 'favoritos' && !s.overlay,
+      isPerfil: s.tab === 'perfil' && !s.overlay,
+      isExpDetail: s.overlay === 'exp',
+      isMapFull: s.overlay === 'map',
+      isImpactFull: s.overlay === 'impact',
+      isTransfer: s.overlay === 'transfer',
+      isPasadia: s.overlay === 'pasadia', openPasadia: this.openPasadia, openTransferPasadia: this.openTransferPasadia,
+      transferTitle: s.transferKind === 'pasadia' ? 'Transferir Pasadía' : 'Transferir Noche',
+      transferSubtitle: s.transferKind === 'pasadia' ? ('Regala tu pasadía a otro huésped. Te quedan ' + (45 - s.pasadiasUsed) + ' de 45.') : ('Regala una de tus noches disponibles a otro huésped. Te quedan ' + (15 - s.nightsUsed) + ' de 15.'),
+      transferItemLabel: s.transferKind === 'pasadia' ? '1 pasadía a transferir' : '1 noche a transferir',
+      transferDoneTitle: s.transferKind === 'pasadia' ? '¡Pasadía transferida!' : '¡Noche transferida!',
+      transferDoneMsg: s.transferKind === 'pasadia' ? ('Se envió 1 pasadía a ' + s.transferEmail + '. Te quedan ' + (45 - s.pasadiasUsed) + ' de 45 pasadías.') : ('Se envió 1 noche a ' + s.transferEmail + '. Te quedan ' + (15 - s.nightsUsed) + ' de 15 noches.'),
+      openTransfer: this.openTransfer, confirmTransfer: this.confirmTransfer, setTransferEmail: this.setTransferEmail,
+      transferEmail: s.transferEmail, transferDone: s.transferDone, transferPending: !s.transferDone,
+      transferCtaBg: s.transferEmail.trim() ? GREEN : 'rgba(111,130,88,0.4)',
+      isBooking: s.overlay === 'booking',
+      showTabBar: true,
+
+      go_home: this.go('home'), go_explorar: this.go('explorar'), go_favoritos: this.go('favoritos'), go_perfil: this.go('perfil'), go_wallet: this.go('wallet'),
+      goProfile: this.goProfile,
+      openBooking: this.openBooking, openMap: this.openMap, openImpact: this.openImpact, closeOverlay: this.closeOverlay,
+
+      tabHomeColor: tabColor('home'), tabExplorarColor: tabColor('explorar'), tabFavColor: tabColor('favoritos'), tabPerfilColor: tabColor('perfil'),
+      tabWalletColor: tabColor('wallet'), tabReservarColor: s.overlay === 'booking' ? GREEN : GRAY,
+
+      walletMovements: [
+        { label: 'Recarga de saldo', date: '24 jul', amount: '+$50.00', color: '#5A6B4A' },
+        { label: 'Reserva SPA', date: '20 jul', amount: '-$45.00', color: '#B9584C' },
+      ],
+
+      experiences, favoriteExperiences,
+      hasFavorites: favoriteExperiences.length > 0, noFavorites: favoriteExperiences.length === 0,
+
+      currentExp: {
+        ...currentExp, imgId: 'exp-' + currentExp.id,
+        toggleFav: this.toggleFav(currentExp.id),
+        heartIconLg: heart(!!s.favorites[currentExp.id], 22),
+      },
+      reserveExperience: this.reserveExperience,
+
+      mapLocations: MAP_LOCATIONS,
+
+      rooms, extras,
+      nights, guests,
+      calendarDays, monthLabel: MONTH_LABEL, weekdays: WEEKDAYS, dateRangeLabel,
+      selectedRoom: room ? { ...room, imgId: 'room-' + room.id } : { name: '', capacity: '', beds: '', size: '', imgId: 'room-none' },
+      totalPrice: '$' + total,
+      bookedRoomName: room ? room.name : '—',
+      bookingSummaryLine,
+      hasBooking: s.hasBooking,
+      nightsRemaining: 15 - s.nightsUsed,
+      nightsUsedPct: Math.round((s.nightsUsed / 15) * 100),
+      pasadiasRemaining: 45 - s.pasadiasUsed,
+      pasadiasUsedPct: Math.round((s.pasadiasUsed / 45) * 100),
+
+      isStep1: s.bookingStep === 1, isStep2: s.bookingStep === 2, isStep3: s.bookingStep === 3, isStep4: s.bookingStep === 4, isStep5: s.bookingStep === 5,
+      showBookingCta: s.bookingStep < 5,
+      bookingStepTitle: ['', 'Reservar Habitación', 'Añadir Extras', 'Elegir Fechas', 'Pago', 'Confirmación'][s.bookingStep],
+      step1Bar: stepColor(1), step2Bar: stepColor(2), step3Bar: stepColor(3), step4Bar: stepColor(4), step5Bar: stepColor(5),
+      ctaBg: s.bookingStep === 1 && !s.roomId ? 'rgba(111,130,88,0.4)' : GREEN,
+      ctaLabel: s.bookingStep === 4 ? 'Confirmar Pago' : (s.bookingStep === 1 ? 'Reservar' : 'Continuar'),
+      ctaBottomPad: '26px',
+      spacerFlex: s.bookingStep === 3 ? '0 0 0px' : '1',
+      bookingBack: this.bookingBack, bookingNext: this.bookingNext, finishBooking: this.finishBooking,
+      nightsUp: this.nightsUp, nightsDown: this.nightsDown, guestsUp: this.guestsUp, guestsDown: this.guestsDown,
+
+      payName: s.payName, payNumber: s.payNumber, payExpiry: s.payExpiry, payCvv: s.payCvv,
+      setPayName: this.setPayName, setPayNumber: this.setPayNumber, setPayExpiry: this.setPayExpiry, setPayCvv: this.setPayCvv,
+      confirmationCode: s.confirmationCode,
+
+      profileRowsAccount: [{ label: 'Editar Perfil' }, { label: 'Notificaciones' }, { label: 'Idioma' }],
+      profileRowsSupport: [{ label: 'Ayuda y Soporte' }, { label: 'Términos y Condiciones' }],
+    };
+  }
+
+  renderMap(w, h, full) {
+    const labels = full
+      ? [{ t: 'Spa', x: 60, y: 40 }, { t: 'Restaurante', x: 220, y: 30 }, { t: 'Recepción', x: 40, y: 110 }, { t: 'Jardines', x: 300, y: 120 }, { t: 'Senderos', x: 55, y: 195 }, { t: 'Bungalows', x: 200, y: 210 }]
+      : [{ t: 'Spa', x: 40, y: 30 }, { t: 'Restaurante', x: 155, y: 22 }, { t: 'Jardines', x: 210, y: 90 }];
+    const pins = full ? [{ x: 100, y: 130 }, { x: 230, y: 160 }] : [{ x: 90, y: 95 }];
+    return React.createElement('div', { style: { width: w, height: h, position: 'relative', background: 'linear-gradient(135deg,#B7C39C,#8FA073)', overflow: 'hidden' } },
+      React.createElement('div', { style: { position: 'absolute', width: 90, height: 90, borderRadius: '50%', background: 'rgba(255,255,255,0.12)', top: h * 0.5, left: w * 0.6 } }),
+      React.createElement('div', { style: { position: 'absolute', width: 60, height: 60, borderRadius: '50%', background: 'rgba(255,255,255,0.1)', top: 10, left: 10 } }),
+      ...labels.map((l, i) => React.createElement('div', {
+        key: 'l' + i, style: {
+          position: 'absolute', left: l.x, top: l.y, background: 'rgba(245,241,230,0.92)', color: '#2B2B24',
+          fontSize: 11, fontWeight: 600, padding: '3px 8px', borderRadius: 20, whiteSpace: 'nowrap',
+        },
+      }, l.t)),
+      ...pins.map((p, i) => React.createElement('div', {
+        key: 'p' + i, style: {
+          position: 'absolute', left: p.x, top: p.y, width: 22, height: 22, borderRadius: '50%',
+          background: '#F5F1E6', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+        },
+      }, React.createElement('div', { style: { width: 8, height: 8, borderRadius: '50%', background: GREEN } }))),
+    );
+  }
+}
+
+</script>
+</body>
+</html>
